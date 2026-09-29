@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BizBot AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="brand">🤖 BizBot AI</div>
+  <a href="admin.html">Admin Dashboard</a>
+</header>
+<main>
+  <section class="hero">
+    <div>
+      <span class="badge">AI Business Assistant</span>
+      <h1>Grow your business with <span>BizBot AI</span></h1>
+      <p>Answer customers, collect enquiries and manage leads from one simple dashboard.</p>
+      <a class="btn" href="#contact">Get Started</a>
+    </div>
+    <div class="bot-card">
+      <div class="bot-head">🤖 BizBot <span>● Online</span></div>
+      <div id="chat" class="chat">
+        <div class="msg bot">Hi! I'm BizBot. How can I help your business today?</div>
+      </div>
+      <div class="chat-input">
+        <input id="chatInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div><b>🤖 AI Chat</b><p>Instant demo responses for common customer questions.</p></div>
+    <div><b>📝 Lead Capture</b><p>Collect customer enquiries through a simple form.</p></div>
+    <div><b>📊 Dashboard</b><p>View saved enquiries in the admin dashboard.</p></div>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contact / Enquiry</h2>
+    <form id="leadForm">
+      <input id="name" required placeholder="Your name">
+      <input id="email" type="email" required placeholder="Email">
+      <input id="phone" required placeholder="Phone">
+      <textarea id="message" required placeholder="How can we help?"></textarea>
+      <button class="btn" type="submit">Submit Enquiry</button>
+    </form>
+    <p id="formStatus"></p>
+  </section>
+</main>
+<footer>© 2026 BizBot AI</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
